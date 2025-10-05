@@ -30,12 +30,15 @@ export function HRWarning({ open, onConfirm, onCancel }: HRWarningProps) {
             </AlertDialogTitle>
           </motion.div>
           <AlertDialogDescription className="text-base">
-            <p className="mb-2 font-bold">This reply may violate company policy!</p>
+            <p className="mb-2 font-bold">
+              This reply may violate company policy!
+            </p>
             <p className="mb-2">
-              The AI has detected MAXIMUM SASS levels. Sending this email could result in:
+              The AI has detected MAXIMUM SASS levels. Sending this email could
+              result in:
             </p>
             <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>Awkward conversations with HR</li>
+              <li>Awkward HR conversations</li>
               <li>Mandatory "professionalism" training</li>
               <li>Being known as "that person"</li>
               <li>Legendary office status (but at what cost?)</li>
@@ -51,7 +54,7 @@ export function HRWarning({ open, onConfirm, onCancel }: HRWarningProps) {
             onClick={onConfirm}
             className="bg-red-600 hover:bg-red-700"
           >
-            YOLO - Generate It
+            YOLO
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

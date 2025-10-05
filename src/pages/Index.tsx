@@ -102,7 +102,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           className="text-center mb-8"
         >
-          <h1 className="text-5xl font-display font-bold mb-2 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-display font-bold mb-2 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent pb-1">
             PerMyLast
           </h1>
           <p className="text-muted-foreground">

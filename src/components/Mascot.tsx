@@ -6,9 +6,9 @@ interface MascotProps {
 
 export function Mascot({ level }: MascotProps) {
   const expressions = [
-    { emoji: "📎", label: "Helper Clippy", rotate: 0 },
-    { emoji: "🤨", label: "Suspicious Clippy", rotate: -10 },
-    { emoji: "😈", label: "Devil Clippy", rotate: 15 },
+    { emoji: "🤓", label: "CHILL", rotate: 0 },
+    { emoji: "🤨", label: "SUSPICIOUS", rotate: -10 },
+    { emoji: "😈", label: "ALL BETS OFF", rotate: 15 },
   ];
 
   const current = expressions[level];
@@ -35,7 +35,9 @@ export function Mascot({ level }: MascotProps) {
           🔥
         </motion.div>
       )}
-      <div className="text-xs text-center mt-2 font-medium">{current.label}</div>
+      <div className="text-xs text-center mt-2 font-medium">
+        {current.label}
+      </div>
     </motion.div>
   );
 }
