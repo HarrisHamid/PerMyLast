@@ -28,7 +28,7 @@ export function ReplyDisplay({ reply, level }: ReplyDisplayProps) {
     }, speed);
 
     return () => clearInterval(timer);
-  }, [reply, level]);
+  }, [reply]);
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(reply);

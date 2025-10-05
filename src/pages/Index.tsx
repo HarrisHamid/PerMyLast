@@ -63,12 +63,15 @@ const Index = () => {
     setReply("");
 
     try {
-      const { data, error } = await supabase.functions.invoke("generate-reply", {
-        body: {
-          email,
-          tone: currentTone,
-        },
-      });
+      const { data, error } = await supabase.functions.invoke(
+        "generate-reply",
+        {
+          body: {
+            email,
+            tone: currentTone,
+          },
+        }
+      );
 
       if (error) {
         throw error;
@@ -100,7 +103,7 @@ const Index = () => {
           className="text-center mb-8"
         >
           <h1 className="text-5xl font-display font-bold mb-2 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            Sassy Email Reply Generator
+            PerMyLast
           </h1>
           <p className="text-muted-foreground">
             Corporate professionalism meets chaotic fun 🎭
